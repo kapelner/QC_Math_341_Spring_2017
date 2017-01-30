@@ -1,6 +1,6 @@
 # MATH 341 Spring 2017
 
-This is the course homepage for Math 341 for the Spring semester 2017 at Queens College, City University of New York taught by Professor Adam Kapelner. The syllabus can be found [here](https://raw.githubusercontent.com/kapelner/QC_Math_241_Spring_2017/master/syllabus/syllabus.pdf).
+This is the course homepage for Math 341 (and Masters level 650.03) for the Spring semester 2017 at Queens College, City University of New York taught by Professor Adam Kapelner. The syllabus can be found [here](https://raw.githubusercontent.com/kapelner/QC_Math_241_Spring_2017/master/syllabus/syllabus.pdf).
 
 ## Lectures
 
@@ -44,7 +44,7 @@ My lectures can be listened to as clyp.it tracks [(all lectures)](https://clyp.i
 * Homework 3 [(download)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw03/hw03.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw03/hw03.pdf) (due 9/20/17)
 * Homework 2 [(download)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw02/hw02.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw02/hw02.pdf) (due 9/13/17)
 * Homework 1 [(download)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw01/hw01.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw01/hw01.pdf) (due 9/6/17)-->
-* Homework 0 [(download)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/syllabus/syllabus.pdf?raw=true) See page 6 (due 2/8/17)
+* Homework 0 (on syllabus, page 6 [download](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/syllabus/syllabus.pdf?raw=true)) (due 2/8/17)
 
 ## Exams
 
