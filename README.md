@@ -1,6 +1,6 @@
 # MATH 341 Spring 2017
 
-This is the course homepage for Math 341 (and Masters level 650.03) for the Spring semester 2017 at Queens College, City University of New York taught by Professor Adam Kapelner. The syllabus can be found [here](https://raw.githubusercontent.com/kapelner/QC_Math_241_Spring_2017/master/syllabus/syllabus.pdf).
+This is the course homepage for Math 341 (and Masters level 650.03) for the Spring semester 2017 at Queens College, City University of New York taught by Professor Adam Kapelner. The syllabus can be found [here](https://raw.githubusercontent.com/kapelner/QC_Math_241_Spring_2017/blob/master/syllabus/syllabus.pdf).
 
 ## Lectures
 
