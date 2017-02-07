@@ -7,6 +7,7 @@ This is the course homepage for Math 341 (and Masters level 650.03) for the Spri
 My lectures can be listened to as clyp.it tracks [(all lectures)](https://clyp.it/search?type=hashtag&query=math_341_spring_2017) and lecture notes are also scanned in as PDF files contributed by students and myself. Clyp has an iphone and android app as well.
 
 <!--
+<<<<<<< HEAD
 * Lecture 23 [(audio)](https://clyp.it/3ootpia0) [(Marcin Sendrowicz Lecs22&23)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec23marcin.pdf) [(Anvar Ashurov)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec23ash.pdf)  [(Linagyong Chen)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec23chenl.pdf) [(Ken Zou)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec23zou.pdf) [(Sherly Zheng)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec23zheng.pdf) [(Randip Parhar)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec23parhar.pdf) [(Prof)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec23kap.pdf)
 * Lecture 22 [(audio)](https://clyp.it/h3jmpbvf) [(Anvar Ashurov)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec22ash.pdf) [(Ken Zou)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec22zou.pdf) [(Sherly Zheng)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec22zheng.pdf) [(Linagyong Chen)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec22chenl.pdf) [(Cynthia Rivera)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec22rivera.pdf) [(Monique Tang)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec22tang.pdf) [(Andrew Kwak)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec22kwak.pdf) [(Prof)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec22kap.pdf)
 * Lecture 21 [(audio)](https://clyp.it/pmilrdvr) [(Marcin Sendrowicz)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec21marcin.pdf)  [(Cynthia Rivera)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec21rivera.pdf)[(Liangyong Chen)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec21chenl.pdf) [(Sherly Zheng)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec21zheng.pdf) [(Nhi Tran)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec21tran.pdf) [(Randip Parhar)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec21parhar.pdf) [(Prof)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec21kap.pdf)
@@ -28,37 +29,37 @@ My lectures can be listened to as clyp.it tracks [(all lectures)](https://clyp.i
 * Lecture 5 [(audio)](https://clyp.it/whwedabc) [(Randip Parhar)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec05parhar.pdf) [(Monique Tang)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec05tang.pdf) [(Prof)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec05kap.pdf)
 * Lecture 4 [(audio)](https://clyp.it/hplwtkqg) [(Marcin Sendrowicz Lec3&4)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec04marcin.pdf) [(Randip Parhar)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec04parhar.pdf) [(Monique Tang)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec04tang.pdf)  [(Prof)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec04kap.pdf)-->
 * Lecture 3 [(audio)](https://clyp.it/0ji0q05p) [(Prof)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec03kap.pdf)
-* Lecture 2 [(audio)](https://clyp.it/h5amuqhc) [(Prof)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec02kap.pdf)
-* Lecture 1 [(audio)](https://clyp.it/y44inqhg) [(Darshan Patel)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec01patel.pdf) [(Prof)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/lectures/lec01kap.pdf)
+* Lecture 2 [(audio)](https://clyp.it/h5amuqhc) [(Melissa DeLuca)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec02deluca.pdf) [(Jailene Ruiz)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec02ruiz.pdf) [(Darshan Patel)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec02patel.pdf) [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec02kap.pdf)
+* Lecture 1 [(audio)](https://clyp.it/y44inqhg) [(Melissa DeLuca)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec01deluca.pdf) [(Jailene Ruiz)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec01ruiz.pdf) [(Darshan Patel)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec01patel.pdf) [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec01kap.pdf)
 
 
 ## Homeworks
 
 <!--
-* Homework 9 [(download)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw09/hw09.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw09/hw09.pdf) (due 12/12/17)
-* Homework 8 [(download)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw08/hw08.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw08/hw08.pdf) (due 12/2/17)
-* Homework 7 [(download)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw07/hw07.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw07/hw07.pdf) (due 11/23/17)
-* Homework 6 [(download)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw06/hw06.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw06/hw06.pdf) (due 11/11/17)
-* Homework 5 [(download)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw05/hw05.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw05/hw05.pdf) (due 10/27/17)
-* Homework 4 [(download)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw04/hw04.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw04/hw04.pdf) (due 10/6/17)
-* Homework 3 [(download)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw03/hw03.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw03/hw03.pdf) (due 9/20/17)
-* Homework 2 [(download)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw02/hw02.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw02/hw02.pdf) (due 9/13/17)-->
-* Homework 1 [(download)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw01/hw01.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/homeworks/hw01/hw01.pdf) (due 2/14/17)
-* Homework 0 (on syllabus, page 6 [download](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/syllabus/syllabus.pdf?raw=true)) (due 2/8/17)
+* Homework 9 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw09/hw09.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw09/hw09.pdf) (due 12/12/17)
+* Homework 8 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw08/hw08.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw08/hw08.pdf) (due 12/2/17)
+* Homework 7 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw07/hw07.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw07/hw07.pdf) (due 11/23/17)
+* Homework 6 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw06/hw06.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw06/hw06.pdf) (due 11/11/17)
+* Homework 5 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw05/hw05.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw05/hw05.pdf) (due 10/27/17)
+* Homework 4 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw04/hw04.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw04/hw04.pdf) (due 10/6/17)
+* Homework 3 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw03/hw03.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw03/hw03.pdf) (due 9/20/17)
+* Homework 2 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw02/hw02.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw02/hw02.pdf) (due 9/13/17)-->
+* Homework 1 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw01/hw01.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw01/hw01.pdf) (due 2/14/17)
+* Homework 0 (on syllabus, page 6 [download](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/syllabus/syllabus.pdf?raw=true)) (due 2/8/17)
 
 ## Exams
 
 * Midterm I Tuesday, February 28 (in class).
 
-<!--[(exam)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/exams/midterm1/midterm1.pdf) [(exam solutions)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/exams/midterm1/midterm1_solutions.pdf)-->
+<!--[(exam)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/exams/midterm1/midterm1.pdf) [(exam solutions)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/exams/midterm1/midterm1_solutions.pdf)-->
 
 * Midterm II Thursday, April 6 (in class).
 
-<!--[(exam)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/exams/midterm2/midterm2.pdf) [(exam solutions)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/exams/midterm2/midterm2_solutions.pdf)-->
+<!--[(exam)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/exams/midterm2/midterm2.pdf) [(exam solutions)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/exams/midterm2/midterm2_solutions.pdf)-->
 
 * Final Thursday, May 25 8:30-10:30AM (in class)
 
-<!--[(exam)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/exams/final/final.pdf) [(exam solutions)](https://github.com/kapelner/QC_Math_241_Spring_2017/blob/master/exams/final/final_solutions.pdf)-->
+<!--[(exam)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/exams/final/final.pdf) [(exam solutions)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/exams/final/final_solutions.pdf)-->
 
 ## Practice Exams
 
