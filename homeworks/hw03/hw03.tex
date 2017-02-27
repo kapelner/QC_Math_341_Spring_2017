@@ -56,9 +56,9 @@ NAME: \line(1,0){380}
 
 \intermediatesubproblem{Put your answer from (a), (b) and (d) together to find the posterior probability of $\theta$ given this dataset. Show that it is equal to a beta distribution and specify its parameters.}\spc{5}
 
-\easysubproblem{Now imagine you are not indifferent and you have some idea about what $\theta$ could be a priori and that subjective feeling can be specified as a beta distribution. (1) Draw the five basic shapes that the beta distribution can take on, (2) give an example of $\alpha$ and $\beta$ values that would produce these shapes and (3) write a sentence about what each one means for your prior belief. These shapes are in the notes.}\spc{8}
+\easysubproblem{Now imagine you are not indifferent and you have some idea about what $\theta$ could be a priori and that subjective feeling can be specified as a beta distribution. (1) Draw the basic shapes that the beta distribution can take on, (2) give an example of $\alpha$ and $\beta$ values that would produce these shapes and (3) write a sentence about what each one means for your prior belief. These shapes are in the notes.}\spc{20}
 
-\intermediatesubproblem{Imagine $n$ data points of which you don't know the realization values. Show that $\theta~|~X \sim \betanot{\alpha + x}{\beta + (n - x)}$. Note that $x := \sum_{i = 1}^n x_i$ which is the total number of successes and thereby $n-x$ is the total nubmer of failures. The answer is in the notes but try to do it yourself.}\spc{10}
+%\intermediatesubproblem{Imagine $n$ data points of which you don't know the realization values. Show that $\theta~|~X \sim \betanot{\alpha + x}{\beta + (n - x)}$. Note that $x := \sum_{i = 1}^n x_i$ which is the total number of successes and thereby $n-x$ is the total nubmer of failures. The answer is in the notes but try to do it yourself.}\spc{10}
 
 \easysubproblem{What does it mean that the beta distribution is the \qu{conjugate prior} for the binomial likelihood?}\spc{3}
 
@@ -70,11 +70,13 @@ NAME: \line(1,0){380}
 
 \intermediatesubproblem{[MA] What is the weakest prior you can think of and why?}\spc{5}
 
-\hardsubproblem{I think a priori that $\theta$ should be expected to be 0.8 with a standard error of 0.02. Solve for the values of $\alpha$ and $\beta$ based on my a priori specification. }\spc{7}
+\hardsubproblem{[MA] Show that if $X \sim \stdbetanot$ then $\var{X} = \frac{\alpha\beta}{\squared{\alpha + \beta}(\alpha + \beta + 1)}$.}\spc{11}
 
-\hardsubproblem{Prove that the posterior predictive distribution is $X^*~|~X \sim \bernoulli{\frac{x + \alpha}{n + \alpha + \beta}}$. MA students --- do this yourself. Other students --- use my notes and justify each step. I use a property of the \href{https://en.wikipedia.org/wiki/Gamma_function}{gamma function}.}\spc{12}
+\hardsubproblem{I think a priori that $\theta$ should be expected to be 0.8 with a standard error of 0.02. Solve for the values of $\alpha$ and $\beta$ based on my a priori specification. }\spc{9}
 
-\intermediatesubproblem{The frequentist estimate of $\theta$ is $\phat = 3/6 = 0.5$ So a frequentist would probably use a posterior predictive distribution (if he had such a thing) as $X^*~|~X \sim \bernoulli{0.5}$. Why conceptually does this answer differ from your answer in (n)?}\spc{4}
+\hardsubproblem{Prove that the posterior predictive distribution is $X^*~|~X \sim \bernoulli{\frac{x + \alpha}{n + \alpha + \beta}}$. MA students --- do this yourself. Other students --- use my notes and justify each step. I use a property of the \href{https://en.wikipedia.org/wiki/Gamma_function}{gamma function}. Remember, if $W \sim \bernoulli{\theta}$ then $\prob{W=1} = \theta$. Use that trick! Set $X^* = 1$ and find that probability!}\spc{12}
+
+\intermediatesubproblem{The frequentist estimate of $\theta$ is $\phat = 3/6 = 0.5$ So a frequentist would probably use a posterior predictive distribution (if he had such a thing) as $X^*~|~X \sim \bernoulli{0.5}$. Why conceptually does this answer differ from your answer in (n)?}\spc{7}
 
 \easysubproblem{Assume the dataset in (b) where $n=6$. Assume $\theta \sim \betanot{\alpha=2}{\beta=2}$ a priori. Find the $\thetahatmap$, $\thetahatmmse$ and $\thetahatmae$ estimates for $\theta$.\\ 
 
@@ -91,6 +93,60 @@ For the $\thetahatmae$ estimate, you'll need to obtain a quantile of the beta di
 \easysubproblem{Explain the disadvantages of the highest density region method for computing credible regions.}\spc{3}
 
 \end{enumerate}
+
+
+\problem{We will again be looking at the beta-prior, binomial-likelihood Bayesian model and practicing hypothesis testing.}
+
+
+\begin{enumerate}
+
+\intermediatesubproblem{Design a prior where you believe $\expe{\theta} = 0.5$ and you feel as if your belief represents information contained in five coin flips.}\spc{3}
+
+\intermediatesubproblem{Calculate a 95\% a priori credible region for $\theta$. Use \texttt{R} on your computer (or \href{http://www.r-fiddle.org/}{R-Fiddle} online) and its \texttt{qbeta} function.}\spc{3}
+
+\easysubproblem{You flip the same coin 100 times and you observe 39 heads. Find the distribution of $\theta~|~X$.}\spc{0.5}
+
+
+\easysubproblem{Calculate a 95\% a posteriori credible region for $\theta$.}\spc{1}
+
+\easysubproblem{Why is your answer to (d) a smaller interval than (b)?}\spc{3}
+
+\intermediatesubproblem{Test the hypothesis that this coin is fair given prior information from (a) and the data from (c). Use the credible region method. Make sure you say whether you retain or reject the null and justify why.}\spc{12}
+
+\intermediatesubproblem{Test the hypothesis that this coin has a bias towards Heads (not tails) given prior information from (a) and the data from (c). Calculate the Bayesian $p$-val for the test to determine if you should retain or reject $H_0$.}\spc{6}
+
+\easysubproblem{Let's say you wanted to test whether the coin is fair but you are indifferent to any $\theta$ which is different from 0.5 by a margin of 0.1. Write out the hypotheses for this test.}\spc{3}
+
+\intermediatesubproblem{Test the hypotheses from (h) given prior information from (a) and the data from (c). Make sure you say whether you retain or reject the null and justify why.}\spc{10}
+
+
+\intermediatesubproblem{Calculate the Bayesian $p$-val for the test in (i).}\spc{3}
+
+\intermediatesubproblem{Given the tested hypotheses from (i) and data from (c), write the formula for the Bayes factor and then write the integral expression. Do not solve.}\spc{4}
+
+
+\intermediatesubproblem{[MA] Calculate the Bayes Factor numerically by solving the integral expression in (k). Interpret your value of $K$ (or $B$) according to \href{https://en.wikipedia.org/wiki/Bayes_factor}{wikipedia page about Bayes Factors}.}\spc{11}
+
+\easysubproblem{Given prior information from (a) and the data from (c), what is the distribution of one future coin flip?}\spc{1}
+
+\intermediatesubproblem{Prove that the $\thetahatmmse$ is a shrinkage estimator.}\spc{8}
+
+\easysubproblem{Assume again the prior information from (a). What is the shrinkage proportion $\rho$ for this prior when  estimating $\theta$ via $\thetahatmmse$?.}\spc{2}
+
+
+
+\hardsubproblem{Prove that $\thetahatmmse$ is a biased estimator (i.e. its expectation is \textit{not} $\theta$).}\spc{5}
+
+\easysubproblem{Prove that $\displaystyle \limitn \rho = 0$ and therefore this bias $\rightarrow 0$ as your dataset gets larger.}\spc{4}
+
+\hardsubproblem{[MA] Why on Earth should anyone use shrinkage estimators if they're biased? Google it. Discuss.}\spc{6}
+
+\end{enumerate}
+
+\end{document}
+
+
+
 
 \problem{This problem is concerned with the logical definition of probability. As a review, we have:
 

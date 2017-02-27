@@ -40,15 +40,15 @@ My lectures can be listened to as clyp.it tracks [(all lectures)](https://clyp.i
 * Homework 7 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw07/hw07.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw07/hw07.pdf) (due 11/23/17)
 * Homework 6 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw06/hw06.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw06/hw06.pdf) (due 11/11/17)
 * Homework 5 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw05/hw05.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw05/hw05.pdf) (due 10/27/17)
-* Homework 4 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw04/hw04.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw04/hw04.pdf) (due 10/6/17)
-* Homework 3 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw03/hw03.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw03/hw03.pdf) (due 9/20/17)-->
+* Homework 4 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw04/hw04.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw04/hw04.pdf) (due 10/6/17)-->
+* Homework 3 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw03/hw03.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw03/hw03.pdf) (due 3/6/17)
 * Homework 2 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw02/hw02.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw02/hw02.pdf) (due 2/24/17)
 * Homework 1 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw01/hw01.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw01/hw01.pdf) (due 2/14/17)
 * Homework 0 (on syllabus, page 6 [download](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/syllabus/syllabus.pdf?raw=true)) (due 2/8/17)
 
 ## Exams
 
-* Midterm I Tuesday, February 28 (in class).
+* Midterm I Tuesday, March 7 (in class).
 
 <!--[(exam)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/exams/midterm1/midterm1.pdf) [(exam solutions)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/exams/midterm1/midterm1_solutions.pdf)-->
 
