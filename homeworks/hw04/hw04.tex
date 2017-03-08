@@ -1,0 +1,249 @@
+\documentclass[12pt]{article}
+
+\include{preamble}
+
+\newtoggle{professormode}
+\toggletrue{professormode} %STUDENTS: DELETE or COMMENT this line
+
+
+
+\title{MATH 341 / 650 Spring 2017 Homework \#4}
+
+\author{Professor Adam Kapelner} %STUDENTS: write your name here
+
+\iftoggle{professormode}{
+\date{Due 2PM under my office door (KY604), Monday, March 20, 2017 \\ \vspace{0.5cm} \small (this document last updated \today ~at \currenttime)}
+}
+
+\renewcommand{\abstractname}{Instructions and Philosophy}
+
+\begin{document}
+\maketitle
+
+\iftoggle{professormode}{
+\begin{abstract}
+The path to success in this class is to do many problems. Unlike other courses, exclusively doing reading(s) will not help. Coming to lecture is akin to watching workout videos; thinking about and solving problems on your own is the actual ``working out.''  Feel free to \qu{work out} with others; \textbf{I want you to work on this in groups.}
+
+Reading is still \textit{required}. For this homework set, review the Binomial-Beta, then read about Bayesian Hypothesis Testing, Bayes Factors, Credible Regions and Empirical Bayes.
+
+The problems below are color coded: \ingreen{green} problems are considered \textit{easy} and marked \qu{[easy]}; \inorange{yellow} problems are considered \textit{intermediate} and marked \qu{[harder]}, \inred{red} problems are considered \textit{difficult} and marked \qu{[difficult]} and \inpurple{purple} problems are extra credit. The \textit{easy} problems are intended to be ``giveaways'' if you went to class. Do as much as you can of the others; I expect you to at least attempt the \textit{difficult} problems.  Problems marked \qu{[MA]} are for the masters students only (those enrolled in the 650 course). For those in 341, doing these questions will count as extra credit.
+
+This homework is worth 100 points but the point distribution will not be determined until after the due date. See syllabus for the policy on late homework.
+
+Up to 10 points are given as a bonus if the homework is typed using \LaTeX. Links to instaling \LaTeX~and program for compiling \LaTeX~is found on the syllabus. You are encouraged to use \url{overleaf.com}. If you are handing in homework this way, read the comments in the code; there are two lines to comment out and you should replace my name with yours and write your section. The easiest way to use overleaf is to copy the raw text from hwxx.tex and preamble.tex into two new overleaf tex files with the same name. If you are asked to make drawings, you can take a picture of your handwritten drawing and insert them as figures or leave space using the \qu{$\backslash$vspace} command and draw them in after printing or attach them stapled.
+
+The document is available with spaces for you to write your answers. If not using \LaTeX, print this document and write in your answers. I do not accept homeworks which are \textit{not} on this printout. Keep this first page printed for your records.
+
+\end{abstract}
+
+\thispagestyle{empty}
+\vspace{1cm}
+NAME: \line(1,0){380}
+\clearpage
+}
+
+
+
+\problem{These are questions about McGrayne's book, chapters 4-7.}
+
+\begin{enumerate}
+
+\easysubproblem{Describe four things Bayesian modeling was applied to during WWII and identify the people who developed each application.}\spc{8}
+
+\intermediatesubproblem{What do you think was the main reason Bayesian Statistics fell out of favor at the end of WWII?}\spc{2}
+
+
+\intermediatesubproblem{Why weren't the leaders of Statistics world in the 1950's able to answer the think-tank's question about the $\prob{\text{war in the next 5 years}}$?}\spc{2}
+
+\easysubproblem{Who was responsible for reviving the interest in Bayesian Statistics post-WWII and why?}\spc{2}
+
+
+\hardsubproblem{In 1955, there were no midair collisions of two planes. How was the actuary able to estimate that the number would be above zero?}\spc{2}
+
+\easysubproblem{The main attack on Bayesian Statistics has always been subjectivity. Answer the following question how Savage would have answered it: \qu{If prior opinions can differ from one researcher to the next, what happens to scientific objectivity in data analysis?} Do you believe Savage's idea is the way science works in the real world?}\spc{3}
+
+
+\hardsubproblem{[MA] On page 104, Sharon writes, \qu{Bayesians would also be able to concentrate on what happened, not on what \textit{could} have happened according to Neyman Pearson's samping plan}. (Note that the \qu{Neyman Pearson's samping plan} is synonymous with Frequentist Statistics). Explain (1) how Bayesians concentrate on \qu{what happened} and (2) how Frequentists concentrate on what \qu{\textit{could} have happened} in the context on page 104.}\spc{6}
+
+
+\easysubproblem{Who were the two tireless champions of Bayesian Statistics throughout the 50's, 60's and 70's and where geographically were they located during the majority of their career?}\spc{2}
+
+\end{enumerate}
+
+
+\problem{This problem is concerned with the logical definition of probability. As a review, we have:
+
+\begin{enumerate}[1.]
+\item \textbf{The Objective View} --- This is the view that probabilities are properties of the physical world and can only be defined by either
+
+\begin{enumerate}[(a)] 
+\item its \textbf{Long Run Frequency} Seeing the same event over and over again and tabulating when the event occurs will create a frequency which will asympotically become the probability or
+\item its \textbf{Propensity} which means deep down inside, the physical object is wired for events in certain proportions.
+\end{enumerate}
+
+
+Thus, events that are non physical such as the probability of Donald Trump winning the 2016 election is outside of the purview of probability. The objective view of probability is tied to the frequentist view of statistics. We also have the...
+
+\item \textbf{The Epistemic View} --- This is the view that probabilities are inherently living inside the minds of human beings who are forced to grapple with uncertainty as they see it. Laplace believed probability is an illusion because we don't have certainty about the universe. The two definitions here are that probability...
+
+\begin{enumerate}[(a)] 
+\item is \textbf{Logical} which means that given the same information, everyone would come to the same conclusion.
+\item is \textbf{Subjective} which means that given the same information, everyone would \textit{not} come to the same conclusion. Thus probability is defined as the degree of belief of some individual which differs from another individual.
+\end{enumerate}
+
+Thus events that are non physical such as the probability of Donald Trump winning the 2016 election can now be legitimate probabilities as they can be computed.
+
+
+\end{enumerate}
+}
+
+\begin{enumerate}
+
+\easysubproblem{
+We discussed last time that the logical definition requires the principle of indifference which goes by many different names. We will now go about showing that the principle of indifference has a tenuous foundation and thereby rendering the logical theory of probability inadequate. Thus, our conclusion will be that Bayesian Statistics runs on the Subjective definition which we may develop in a later homework. We begin with demonstrating a paradox in the logical definition for a discrete set of $\theta_0$. \\
+
+Imagine you have a library with thousands of books but all are either red, green, yellow or purple but you don't know the proportions of the books' colors. Imagine you are blindfolded and select a random book and you are only interested if it's \textit{red} or \textit{not red}. According to the principle of indifference, what is your prior probability that the book is red? Remember, $|\Theta_0|  = 2$ here.}\spc{2}
+
+\easysubproblem{Imagine you are blindfolded and select a random book and you are interested if it's red, green, yellow or purple. According to the principle of indifference, what is your prior probability that the book is red? Remember, $|\Theta_0|  = 4$ here.}\spc{1}
+
+
+\intermediatesubproblem{Why do (a) and (b) constitute a paradox? Does this limit the application of the principle of indifference?}\spc{4}
+
+\easysubproblem{Now we're going to work on trashing the principle of indifference for continuous measures. Thanks to Wikipedia... Imagine I have a cube-shaped box. The length of the side we call $S$ and we know it's less than 1 inch in length. Thus its prior distribution under the principle of indifference should be $S \sim \uniform{0}{1}$. What is the expected length of the side a priori (that is according to the prior distribution)? Please do not overthink this.}\spc{1}
+
+\intermediatesubproblem{Given the same prior as previously, imagine the surface area which is calculated as $6S^2$. Find expectation of the surface area. You may need to look at your Math 241 notes to get the variance of the uniform r.v. Is the answe you get equal to using the prior mean length and computing the surface area based on that, i.e. $6 \expe{S}^2$?}\spc{6}
+
+\intermediatesubproblem{We will not prove this, but it shouldn't come as a surprise that the surface area is not distributed uniformly between 0 and 6 given what you saw in your last answer. What does this mean for the principle of indifference? It only works...}\spc{3}
+
+\easysubproblem{It may be argued that one is only indifferent to the length of the side and that it's okay this implies a non-indifference to the surface area and volume. But here's a paradox that's harder to argue with which I got from \href{http://www.amazon.com/Philosophical-Theories-Probability-Issues-Science/dp/041518276X/ref=sr_1_1?ie=UTF8&qid=1455112335&sr=8-1&keywords=donald+gillies+theory+of+probability}{Gillies' book}. Imagine you have a drink in front of you made up of some parts wine and some parts water. You have a prior belief that the ratio of wine/water is $\uniform{1/4}{4}$ using the principle of indifference. What is the probability (according to your prior belief) that the $\prob{\text{wine/water} \geq 2}$?}\spc{2}
+
+\easysubproblem{Using the principle of indifference, what does this imply that the ratio of water/wine should be $\uniform{1/4}{4}$ as well? It shouldn't matter whether you pick wine divided by water or water divided by wine, right? Answer yes/no and give your gut reaction.}\spc{1}
+
+\easysubproblem{Assuming that the ratio of water/wine is $\uniform{1/4}{4}$, calculate:
+
+\beqn
+\prob{\inverse{\text{wine/water}} \geq 2^{-1}} = \prob{\text{water/wine} \leq \half}  =
+\eeqn
+
+And: is this different to the answer you got in (g)?} \spc{4}
+
+\hardsubproblem{Why is this a paradox? Write a couple sentences how this should doom the principle of indifference in the case of a continuous $\Theta_0$ space.}\spc{4}
+
+\intermediatesubproblem{[MA] Now we're going to see how this fails. Under the prior belief that the ratio of wine/water is $\uniform{1/4}{4}$, derive the PDF of the ratio of water/wine. Is it also $\uniform{1/4}{4}$? If you need a refresher on this stuff, see \href{http://www.math.uah.edu/stat/dist/Transformations.html}{here}. (Note: we're going to see Jeffrey's answer to this issue soon enough in class).}\spc{6}
+
+
+\end{enumerate}
+
+
+
+\problem{Some quick question on mixture distributions.}
+
+\begin{enumerate}
+
+\easysubproblem{If $X$ is independent to $W$ and $X$ is independent to $Z$ and $X$ is independent to $U$, can you write $\cprob{X}{U,V,W,Y,Z}$ more compactly? Do so below.}\spc{1}
+
+\easysubproblem{Let $X$ be $\normnot{0}{1^2}$ 1/3 of the time and $\exponential{3}$ 2/3 of the time. What is its pdf?}\spc{2}
+
+
+\hardsubproblem{Let's say $X~|~\beta \sim \betanot{1}{\beta}$ where $\beta~|~\lambda \sim \exponential{\lambda}$. Write an integral expression which when solved, finds the compound / marginal density of $X$. DO NOT solve.}\spc{6}
+
+\hardsubproblem{[MA] Let's say $X~|~\theta,~\sigsq \sim \normnot{\theta}{\sigsq}$ where $\theta~|~\mu_0,~\tausq \sim \normnot{\mu_0}{\tausq}$. Write an integral expression which when solved, finds the compound / marginal density of $X$. DO NOT solve.}\spc{6}
+
+\end{enumerate}
+
+\problem{We will now have lots of examples finding kernels from common distributions. Some of these questions are silly, but they will force you to think hard about what the kernel is under different situations. And... they're fun!}
+
+\begin{enumerate}
+
+\easysubproblem{What is the kernel of $X~|~\theta,~n \sim \binomial{n}{\theta}$?}\spc{3}
+
+\hardsubproblem{What is the kernel of $X, n~|~\theta \sim \binomial{n}{\theta}$? Be careful...}\spc{3}
+
+\easysubproblem{What is the kernel of $X~|~\theta \sim \poisson{\theta}$?}\spc{3}
+
+\hardsubproblem{What is the kernel of $\theta~|~X \sim \poisson{\theta}$? Be careful...}\spc{3}
+
+\easysubproblem{What is the kernel of $X~|~\alpha,~\beta \sim \stdbetanot$?}\spc{4}
+
+\easysubproblem{What is the kernel of $X~|~\theta \sim \exponential{\theta}$?}\spc{4}
+
+\easysubproblem{What is the kernel of $X~|~\theta,~\sigsq \sim \normnot{\theta}{\sigsq}$?}\spc{4}
+
+\hardsubproblem{What is the kernel of $\theta,~\sigsq~|~X \sim \normnot{\theta}{\sigsq}$? Be careful...}\spc{4}
+
+\intermediatesubproblem{[MA] What is the kernel of 
+
+\beqn
+X~|~N,~\theta,~n \sim \hypergeometric{N}{\theta}{n} := {{{ \theta \choose x} {{N-\theta} \choose {n-x}}}\over {N \choose n}}
+\eeqn
+
+where $N$ is the number of total balls in the bag, $\theta$ is the number of success balls in the bag and $n$ is the number drawn out of the bag?}\spc{9}
+
+\hardsubproblem{[MA] If $X~|~\theta,~\sigsq \sim \normnot{\theta}{\sigsq}$ and $\theta~|~\mu_0,~\tausq \sim \normnot{\mu_0}{\tausq}$, what is the kernel of $\theta~|~X,~\sigsq,~\mu_0,~\tausq$?}\spc{6}
+
+\end{enumerate}
+
+
+\problem{These are questions about other vague priors: improper priors and Jeffreys priors.}
+
+\begin{enumerate}
+
+\easysubproblem{What is an improper prior?}\spc{2}
+
+\easysubproblem{Is $\theta \sim \betanot{100}{0}$ improper? Yes / no and provide a proof.}\spc{4}
+
+\easysubproblem{When are improper priors \qu{legal}?}\spc{4}
+
+\easysubproblem{When are improper priors \qu{illegal}?}\spc{4}
+
+\hardsubproblem{What does $I(\theta)$ tell you about the random variable with respect to its parameter $\theta$?}\spc{5}
+
+\intermediatesubproblem{If I compute a posterior on the $\theta$ scale and then measure the parameter on another scale, will I (generally) get the same posterior probability? Yes/no explain.}\spc{4}
+
+
+\easysubproblem{What is the Jeffrey's prior for $\theta$ under the binomial likelihood? Your answer must be a distribution.}\spc{4}
+
+\hardsubproblem{What is the Jeffrey's prior for $\theta = t^{-1}(r) = \frac{e^r}{1 + e^r}$ (i.e. the log-odds reparameterization) under the binomial likelihood?}\spc{8}
+
+
+\hardsubproblem{Explain the advantage of Jeffrey's prior.}\spc{12}
+
+\hardsubproblem{[MA] Prove Jeffrey's invariance principle i.e. prove that the Jeffrey's prior makes your prior probability immune to transformations. Use the second proof from class.}\spc{12}
+
+\end{enumerate}
+
+
+\problem{This question is about \qu{batting averages} in baseball.
+
+\begin{figure}[htp]
+\centering
+\includegraphics[width=3.8in]{baseball.jpg}
+\end{figure}
+
+\noindent Every hitter's \emph{sample} batting average (BA) is defined as:
+
+\beqn
+BA := \frac{\text{sample \# of hits}}{\text{sample \# of at bats}}
+\eeqn
+
+In this problem we care about estimating a hitter's \emph{true} batting average which we call $\theta$. Each player has a different $\theta$ but we focus in this problem on one specific player. In order to estimate the player's true batting average, we make use of the sample batting average as defined above (with Bayesian modifications, of course). 
+
+We assume that each at bat (for any player) are conditionally $\iid$ based on the players' true batting average, $\theta$. So if a player has $n$ at bats, then each successful hit in each at bat can be modeled via $X_1~|~\theta, ~X_2~|~\theta, \ldots, ~X_n~|~\theta \iid \bernoulli{\theta}$ i.e. the standard assumption.}
+
+\begin{enumerate}
+
+\easysubproblem{Looking at the entire dataset for 6,061 batters who had 100 or more at bats, I fit a beta function to the sample batting averages and estimated $\alpha = 42.3$ and $\beta = 127.7$ (which we called \qu{empirical Bayes} estimates in class). Consider building a prior from this estimate as $\theta \sim \betanot{42.3}{127.7}$ Would a prior based on these hyperparameter estimates be \qu{objective}? Yes / No. Why?}\spc{1}
+
+\easysubproblem{Using prior data to build the prior is called...}\spc{0}
+
+\easysubproblem{Is the prior from (a) considered a \qu{conjugate prior}? Yes / No.}\spc{0.5}
+
+\easysubproblem{Using the prior from (a), find the $\thetahatmmse$.}\spc{0.5}
+
+\hardsubproblem{We now observe four at bats for a new player and there were no hits. Write an exact expression for the batter getting 14 or more hits on the next 20 at bats. You can leave your answer in terms of the beta function. Do not compute explicitly.} \spc{5}
+
+\end{enumerate}
+
+\end{document}
+
+
