@@ -24,7 +24,7 @@
 \begin{abstract}
 The path to success in this class is to do many problems. Unlike other courses, exclusively doing reading(s) will not help. Coming to lecture is akin to watching workout videos; thinking about and solving problems on your own is the actual ``working out.''  Feel free to \qu{work out} with others; \textbf{I want you to work on this in groups.}
 
-Reading is still \textit{required}. For this homework set, review the Geometric-Beta model, the Poisson-Gamma model, Normal-Normal model and the posterior predictive distributions in each case.
+Reading is still \textit{required}. For this homework set, review the Geometric-Beta model, the Poisson-Gamma model, the Exponential-Gamma model and the posterior predictive distributions in the first two cases. Then, study the basics of the Normal-Normal model. Also, review credible regions and Bayesian Hypothesis Tests.
 
 The problems below are color coded: \ingreen{green} problems are considered \textit{easy} and marked \qu{[easy]}; \inorange{yellow} problems are considered \textit{intermediate} and marked \qu{[harder]}, \inred{red} problems are considered \textit{difficult} and marked \qu{[difficult]} and \inpurple{purple} problems are extra credit. The \textit{easy} problems are intended to be ``giveaways'' if you went to class. Do as much as you can of the others; I expect you to at least attempt the \textit{difficult} problems.  Problems marked \qu{[MA]} are for the masters students only (those enrolled in the 650 course). For those in 341, doing these questions will count as extra credit.
 
@@ -61,12 +61,13 @@ NAME: \line(1,0){380}
 
 \easysubproblem{Did Bayesian Statistics prevent nuclear accidents? Discuss.}\spc{5}
 
-\easysubproblem{What is the main reason why there are so many variations of Bayesian interpretation? (p129)}\spc{2}
+\easysubproblem{What is the main reason why there are so many variations of Bayesian interpretation? (p129)}\spc{4}
 
-\easysubproblem{What is a large practical drawback of Bayesian inference? (See mid-end of chapter 8).}\spc{2}
+\easysubproblem{What is a large practical drawback of Bayesian inference? (See mid-end of chapter 8).}\spc{9}
 
 \end{enumerate}
 
+\input{R_functions_table}
 
 \problem{We will again be looking at the beta-prior, negative-binomial-likelihood Bayesian model. But first consider the more basic case where $\Xoneton ~|~ \theta \iid \geometric{\theta}$ and $\theta \sim \stdbetanot$.}
 
@@ -74,11 +75,11 @@ NAME: \line(1,0){380}
 \begin{enumerate}
 
 
-\easysubproblem{What is the likelihood model here? Write the PMF using the parameterization from class only.}\spc{2}
+\easysubproblem{What is the likelihood model here? Write the PMF using the parameterization from class (not from previous classes you may have taken).}\spc{2}
 
 \intermediatesubproblem{Demonstrate that the posterior in this case is Beta and find the posterior parameters.}\spc{6}
 
-\easysubproblem{Give expressions for $\thetahatmmse,~\thetahatmae$ and $\thetahatmap$ (use the approximation for the median of the beta distribution given in the notes for $\thetahatmae$). Are they all similar is $n$ is large?}\spc{3}
+\easysubproblem{Give expressions for $\thetahatmmse,~\thetahatmae$ and $\thetahatmap$. Are they all similar if $n$ is large? Feel free to use Table~\ref{tab:eqs}.}\spc{3}
 
 \hardsubproblem{Interpret the hyperparameters $\alpha$ and $\beta$ in the context of the posterior parameters.}\spc{5}
 
@@ -106,43 +107,49 @@ NAME: \line(1,0){380}
 %sum
 
 
-\intermediatesubproblem{Consider $\Xoneton \exchdist \negbin{r}{\theta}$ where $r$ is considered known and $\theta \sim \stdbetanot$ Demonstrate that the posterior in this case is Beta and find the posterior parameters.}\spc{6}
+\intermediatesubproblem{[MA] Consider $\Xoneton ~|~\theta \iid \negbin{r}{\theta}$ where $r$ is considered known and $\theta \sim \stdbetanot$ Demonstrate that the posterior in this case is Beta and find the posterior parameters.}\spc{6}
 
-\easysubproblem{Give expressions for $\thetahatmmse,~\thetahatmae$ and $\thetahatmap$ (use the approximation for the median of the beta distribution given in the notes for $\thetahatmae$). Are they all similar is $n$ is large?}\spc{3}
+\easysubproblem{[MA] Give expressions for $\thetahatmmse,~\thetahatmae$ and $\thetahatmap$ (use the approximation for the median of the beta distribution given in the notes for $\thetahatmae$). Are they all similar is $n$ is large?}\spc{3}
 
 
 \easysubproblem{[MA] Find the Jeffrey's prior for $\theta$ as a function of $r$. Look up the $I(\theta)$ on the Internet for the negative binomial given the parameterization we used in class. You do not need to do the derivation yourself.}\spc{2}
 
-\hardsubproblem{[MA] Derive the posterior distribution PMF for one new negative binomial observation after seeing $n$ observations. This is a lot of computation.}\spc{18}
+\extracreditsubproblem{[MA] Derive the posterior prediction distribution PMF for one new negative binomial observation after seeing $n$ observations. This is a lot of computation.}\spc{18}
 
-\hardsubproblem{[MA] Write an integral expression for the joint posterior distribution for $m$ new negative binomail observations. Extra credit if you can find the solution somewhere on the Internet.}\spc{6}
+\extracreditsubproblem{[MA] Write an integral expression for the joint posterior distribution for $m$ new negative binomail observations. If you can find the solution somewhere on the Internet, no problemo.}\spc{6}
 
-\intermediatesubproblem{Derive the PMF of the BetaGeometric($\alpha, \beta$) distribution. Hint: the formula for the BetaNegativeBinomial($r, \alpha, \beta$) PMF was given in class. All you need to do is solve for the special case when $r=1$. Leave in terms of the beta function.}\spc{5}
+\intermediatesubproblem{Derive the PMF of the BetaGeometric($\alpha, \beta$) distribution. All you need to do is solve for the special case when $r=1$. Leave in terms of the beta function.}\spc{5}
 
 \intermediatesubproblem{Find the kernel of the BetaGeometric distribution.}\spc{6}
 
 
-\intermediatesubproblem{Imagine $r=3$ and you've seen the following data from the model: 5, 8, 6, 9, 11, 10, 7, 10, 11, 8, 9, 7, 7, 6. Find an expression for the probability the next observation will be 10.}\spc{3}
+\intermediatesubproblem{Imagine you've seen the following data from the $\iid$ geometric model: 5, 8, 6, 9, 11, 10, 7, 10, 11, 8, 9, 7, 7, 6. Use the Jeffrey's prior. Find a 80\% credible region for $\theta$.}\spc{3}
 
-\easysubproblem{Evaluate the probability in (q).}\spc{2}
+\easysubproblem{Find an expression for the probability the next observation will be 10.}\spc{2}
+
+\intermediatesubproblem{Write an \texttt{R} expression for the probability in (r) using Table~\ref{tab:eqs}.}\spc{2}
+
+\easysubproblem{[MA] Actually compute the probability in (r).}\spc{2}
+
 
 \end{enumerate}
+
 
 
 \problem{We will ask some basic problems on the Gamma-Poisson conjugate model.}
 
 \begin{enumerate}
 
-\easysubproblem{If $X \sim \poisson{\theta}$, what is the kernel of $\theta~|~X$?}\spc{2}
+\easysubproblem{If $X \sim \poisson{\theta}$, what is the kernel of the posterior? Leave the prior in as a general term $\prob{\theta}$.}\spc{4}
 
-\easysubproblem{Write the PDF of $\theta$ which is the gamma distribution with the standard hyperparameters we used in class.}\spc{1}
+\easysubproblem{Write the PDF of $\theta$ which is the gamma distribution with the standard hyperparameters we used in class.}\spc{2}
 
 \easysubproblem{What is the support and parameter space?}\spc{2}
 
 \easysubproblem{What is the expectation and standard error and mode?}\spc{2}
 
 
-\easysubproblem{Draw four different pictures of different hyperparameter combinations to demonstrate this model's flexibility}\spc{8}
+\easysubproblem{Draw four different pictures of different hyperparameter combinations to demonstrate this model's flexibility}\spc{10}
 
 
 \intermediatesubproblem{Prove that the Poisson likelihood for $n=1$ with a gamma prior yields a gamma posterior and find its parameters.}\spc{4}
@@ -151,22 +158,22 @@ NAME: \line(1,0){380}
 
 \intermediatesubproblem{For the Poisson likelihood for $n$ observations with a gamma prior find $\thetahatmmse$, $\thetahatmae$ and $\thetahatmap$.}\spc{2}
 
-\intermediatesubproblem{Demonstrate that $\thetahatmmse$ is a shrinkage estimator and find $\rho$.}\spc{4}
+\intermediatesubproblem{[MA] Demonstrate that $\thetahatmmse$ is a shrinkage estimator and find $\rho$.}\spc{4}
 
-\easysubproblem{Demonstrate that $\prob{\theta} \propto 1$ is improper.}\spc{2}
+\intermediatesubproblem{Demonstrate that $\prob{\theta} \propto 1$ is improper.}\spc{2}
 
-\easysubproblem{Demonstrate that $\prob{\theta} \propto 1$ can be created by using an improper Gamma distribution (i.e. a Gamma distribution with parameters that are not technically in its parameter space and thereby does not admit a distribution function).}\spc{2}
+\easysubproblem{[MA] Demonstrate that $\prob{\theta} \propto 1$ can be created by using an improper Gamma distribution (i.e. a Gamma distribution with parameters that are not technically in its parameter space and thereby does not admit a distribution function).}\spc{2}
 
-\easysubproblem{What is the Jeffrey's prior for the Poisson likelihood model?}\spc{2}
+\easysubproblem{What is the Jeffrey's prior for the Poisson likelihood model? Do not rederive. Just copy.}\spc{2}
 
 \easysubproblem{What is the equivalent of the Haldane prior in the Binomial likelihood model for the Poisson likelihood model?}\spc{2}
 
-\intermediatesubproblem{[MA] Prove that posterior predictive distribution for the next exchangeable Poisson realization given $n$ observed Poisson realizations is negative binomially distributed and show its parameters are $p = \beta / (\beta + 1)$ and $r = \alpha$ for $\alpha \in \naturals$.}\spc{10}
+\extracreditsubproblem{[MA] Prove that posterior predictive distribution for the next Poisson realization given $n$ observed Poisson realizations is negative binomially distributed and show its parameters are $p = \beta / (\beta + 1)$ and $r = \alpha$ for $\alpha \in \naturals$.}\spc{10}
 
-\hardsubproblem{If $\alpha \notin \naturals$, create an \qu{extended negative binomial} r.v. and find its PMF.}\spc{5}
+\intermediatesubproblem{If $\alpha \notin \naturals$, create an \qu{extended negative binomial} r.v. and find its PMF. You can copy from Wikipedia.}\spc{3}
 
 
-\easysubproblem{Why is the extended negative binomial r.v. also known as the gamma-Poisson mixture distribution?}\spc{3}
+\intermediatesubproblem{Why is the extended negative binomial r.v. also known as the gamma-Poisson mixture distribution?}\spc{5}
 
 \extracreditsubproblem{[MA] Find the joint posterior predictive distribution for $m$ future observations. I couldn't find the answer to this myself nor compute the integral.}\spc{5}
 
@@ -175,7 +182,7 @@ NAME: \line(1,0){380}
 \intermediatesubproblem{Using the data and the prior from (r), test if $\theta < 2$.}\spc{8}
 
 
-\hardsubproblem{[MA] We talked about that the negative binomial is an \qu{overdispersed} Poisson. Show that the negative binomial converges to a Poisson. Try yourself before you Google the answer.}\spc{5}
+\extracreditsubproblem{[MA] We talked about that the negative binomial is an \qu{overdispersed} Poisson. Show that the negative binomial converges to a Poisson. Try yourself before you Google the answer.}\spc{5}
 
 \end{enumerate}
 
@@ -184,13 +191,13 @@ NAME: \line(1,0){380}
 
 \begin{enumerate}
 
-\easysubproblem{If $X \sim \exponential{\theta}$, what is the kernel of $\theta~|~X$?}\spc{2}
+\easysubproblem{If $X \sim \exponential{\theta}$, what is the kernel of $\theta~|~X$?}\spc{5}
 
 \intermediatesubproblem{Prove that the Exponential likelihood for $n=1$ with a gamma prior yields a gamma posterior and find its parameters.}\spc{8}
 
 \intermediatesubproblem{Prove that the exponential likelihood for $n$ observations with a gamma prior yields a gamma posterior and find its parameters.}\spc{6}
 
-\intermediatesubproblem{For the exponential likelihood for $n$ observations with a gamma prior find $\thetahatmmse$, $\thetahatmae$ and $\thetahatmap$.}\spc{2}
+\intermediatesubproblem{For the exponential likelihood for $n$ observations with a gamma prior find $\thetahatmmse$, $\thetahatmae$ and $\thetahatmap$.}\spc{4}
 
 \intermediatesubproblem{Demonstrate that $\thetahatmmse$ is a shrinkage estimator and find $\rho$.}\spc{4}
 
@@ -202,7 +209,7 @@ NAME: \line(1,0){380}
 
 \extracreditsubproblem{[MA] Find the joint posterior predictive distribution for $m$ future observations.}\spc{0.1}
 
-\hardsubproblem{[MA] What is the Jeffrey's prior for the exponential likelihood? Try yourself before you Google the answer.}\spc{5}
+\extracreditsubproblem{[MA] What is the Jeffrey's prior for the exponential likelihood? Try yourself before you Google the answer.}\spc{5}
 
 \end{enumerate}
 
@@ -219,6 +226,10 @@ NAME: \line(1,0){380}
 
 \hardsubproblem{Show that posterior of $\theta~|~X,~\sigsq$ is normal if $\theta \sim \normnot{\mu_0}{\tausq}$. Try to do it yourself and only copy from the notes if you have to.}\spc{15}
 
+\end{enumerate}
+
+
+\end{document}
 
 \easysubproblem{What is the definition of the convolution of two r.v.'s $X_1$ and $X_2$?}\spc{1}
 
