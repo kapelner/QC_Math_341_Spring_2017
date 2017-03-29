@@ -69,7 +69,7 @@ My lectures can be listened to as clyp.it tracks [(all lectures)](https://clyp.i
 
 * Midterm II
 
-[(practice exam 1)](https://github.com/kapelner/QC_Math_390.03-02_Spr_2016/blob/master/exams/midterm2/midterm2.pdf) [(practice exam solutions)](https://github.com/kapelner/QC_Math_390.03-02_Spr_2016/blob/master/exams/midterm2/midterm2_solutions.pdf)
+[(practice exam 1)](https://github.com/kapelner/QC_Math_390.03-02_Spr_2016/blob/master/exams/midterm2/midterm2.pdf) [(practice exam solutions)](https://github.com/kapelner/QC_Math_390.03-02_Spr_2016/blob/master/exams/midterm2/midterm2_solutions.pdf) Problem 1a--d and a subset of Problem 3 found in HW6 above.
 
 * Final
 
