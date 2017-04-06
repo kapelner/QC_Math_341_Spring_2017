@@ -54,7 +54,7 @@ My lectures can be listened to as clyp.it tracks [(all lectures)](https://clyp.i
 
 * Midterm II Thursday, April 6 (in class).
 
-<!--[(exam)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/exams/midterm2/midterm2.pdf) [(exam solutions)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/exams/midterm2/midterm2_solutions.pdf)-->
+[(exam)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/exams/midterm2/midterm2.pdf) [(exam solutions)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/exams/midterm2/midterm2_solutions.pdf)
 
 * Final Thursday, May 25 8:30-10:30AM (in class)
 
