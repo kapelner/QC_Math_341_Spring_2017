@@ -35,7 +35,7 @@ My lectures can be listened to as clyp.it tracks [(all lectures)](https://clyp.i
 <!--
 * Homework 9 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw09/hw09.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw09/hw09.pdf) (due 12/12/17)
 * Homework 8 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw08/hw08.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw08/hw08.pdf) (due 12/2/17)-->
-* Homework 7 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw07/hw07.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw07/hw07.pdf) (due 5/1/17)
+* Homework 7 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw07/hw07.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw07/hw07.pdf) (due 5/8/17)
 * Homework 6 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw06/hw06.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw06/hw06.pdf) (due 4/5/17)
 * Homework 5 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw05/hw05.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw05/hw05.pdf) (due 3/31/17)
 * Homework 4 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw04/hw04.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw04/hw04.pdf) (due 3/20/17)
