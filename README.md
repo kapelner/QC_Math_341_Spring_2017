@@ -7,8 +7,8 @@ This is the course homepage for Math 341 (and Masters level 650.03) for the Spri
 My lectures can be listened to as clyp.it tracks [(all lectures)](https://clyp.it/search?type=hashtag&query=math_341_spring_2017) and lecture notes are also scanned in as PDF files contributed by students and myself. Clyp has an iphone and android app as well.
 
 <!--
-* Lecture 21 [(audio)](https://clyp.it/pmilrdvr) [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec21kap.pdf)
-* Lecture 20 [(audio)](https://clyp.it/hlw3yd1n) [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec20kap.pdf)-->
+* Lecture 21 [(audio)](https://clyp.it/pmilrdvr) [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec21kap.pdf)-->
+* Lecture 20 [(audio)](https://clyp.it/htcj4j1q) [(Jailene Ruiz)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec20ruiz.pdf) [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec20kap.pdf) You can see demo images [here](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec20_demos).
 * Lecture 19 [(audio)](https://clyp.it/wdwifngo) [(Jailene Ruiz)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec19ruiz.pdf) [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec19kap.pdf)
 * Lecture 18 [(audio)](https://clyp.it/di0zuc0q) [(Se Kim)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec18kim.pdf) [(Melissa DeLuca)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec18deluca.pdf) [(Jailene Ruiz)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec18ruiz.pdf) [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec18kap.pdf)
 * Lecture 17 [(audio)](https://clyp.it/fpzhlkti) [(Se Kim)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec17kim.pdf) [(Melissa DeLuca)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec17deluca.pdf) [(Jailene Ruiz)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec17ruiz.pdf) [(Prof)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/lectures/lec17kap.pdf)
@@ -33,7 +33,7 @@ My lectures can be listened to as clyp.it tracks [(all lectures)](https://clyp.i
 ## Homeworks
 
 <!--
-* Homework 9 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw09/hw09.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw09/hw09.pdf) (due 12/12/17)-->
+* Homework 9 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw09/hw09.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw09/hw09.pdf) (due 5/23/17)-->
 * Homework 8 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw08/hw08.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw08/hw08.pdf) (due 5/16/17)
 * Homework 7 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw07/hw07.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw07/hw07.pdf) (due 5/8/17)
 * Homework 6 [(download)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw06/hw06.pdf?raw=true) [(view)](https://github.com/kapelner/QC_Math_341_Spring_2017/blob/master/homeworks/hw06/hw06.pdf) (due 4/5/17)
