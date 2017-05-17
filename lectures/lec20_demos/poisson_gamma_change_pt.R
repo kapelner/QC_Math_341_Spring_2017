@@ -62,19 +62,19 @@ for (t in 2 : S){
 par(mfrow = c(3, 1))
 S0 = 100
 plot(1 : S0, lambda1s[1 : S0])
-abline(h = mean(lambda1s[B : S0]), col = "blue")
-abline(h = true_lambda_1, col = "red")
-abline(v = B, col = "grey")
+# abline(h = mean(lambda1s[B : S0]), col = "blue")
+# abline(h = true_lambda_1, col = "red")
+# abline(v = B, col = "grey")
 
 plot(1 : S0, lambda2s[1 : S0])
-abline(h = mean(lambda2s[B : S0]), col = "blue")
-abline(h = true_lambda_2, col = "red")
-abline(v = B, col = "grey")
+# abline(h = mean(lambda2s[B : S0]), col = "blue")
+# abline(h = true_lambda_2, col = "red")
+# abline(v = B, col = "grey")
 
 plot(1 : S0, ms[1 : S0])
-abline(h = mean(ms[B : S0]), col = "blue")
-abline(h = sqrt(true_m), col = "red")
-abline(v = B, col = "grey")
+# abline(h = mean(ms[B : S0]), col = "blue")
+# abline(h = sqrt(true_m), col = "red")
+# abline(v = B, col = "grey")
 #plot
 B = 10
 

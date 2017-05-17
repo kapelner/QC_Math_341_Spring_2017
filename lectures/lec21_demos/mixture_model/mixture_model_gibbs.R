@@ -12,7 +12,8 @@ true_rho = 0.3
 x = c(rnorm(n * true_rho, true_theta_1, sqrt(true_sigsq_1)), rnorm(n * (1 - true_rho), true_theta_2, sqrt(true_sigsq_2)))
 
 par(mfrow = c(1, 1))
-hist(x, br = 80) #plot
+hist(x, br = 80) 
+#plot
 
 
 #chains
@@ -67,33 +68,33 @@ S0 = 150
 plot(1 : S0, theta1s[1 : S0])
 abline(h = mean(theta1s[B : S0]), col = "blue")
 # abline(h = true_theta_1, col = "red")
-abline(v = B, col = "grey")
+# abline(v = B, col = "grey")
 
 plot(1 : S0, theta2s[1 : S0])
 abline(h = mean(theta2s[B : S0]), col = "blue")
 # abline(h = true_theta_2, col = "red")
-abline(v = B, col = "grey")
+# abline(v = B, col = "grey")
 
 plot(1 : S0, sigsq1s[1 : S0])
 abline(h = mean(sigsq1s[B : S0]), col = "blue")
 # abline(h = sqrt(true_sigsq_1), col = "red")
-abline(v = B, col = "grey")
+# abline(v = B, col = "grey")
 
 plot(1 : S0, sigsq2s[1 : S0])
 abline(h = mean(sigsq2s[B : S0]), col = "blue")
 # abline(h = sqrt(true_sigsq_2), col = "red")
-abline(v = B, col = "grey")
+# abline(v = B, col = "grey")
 
 plot(1 : S0, rhos[1 : S0])
 abline(h = mean(rhos[B : S0]), col = "blue")
 # abline(h = sqrt(true_rho), col = "red")
-abline(v = B, col = "grey")
-
+# abline(v = B, col = "grey")
+#plot
 
 ##assess autocorrelation
 
 par(mfrow = c(5, 1))
-Kmax = 30
+Kmax = 35
 acf(theta1s[B : S], xlim = c(0, Kmax), lag.max = Kmax)
 acf(theta2s[B : S], xlim = c(0, Kmax), lag.max = Kmax)
 acf(sigsq1s[B : S], xlim = c(0, Kmax), lag.max = Kmax)
